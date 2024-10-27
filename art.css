@@ -1,0 +1,256 @@
+body{
+  
+  background-image: url("background-1086840_1920.png");
+  
+  background-repeat: repeat-x; /* Repeat the image horizontally */
+
+  
+  /* Set the initial background position */
+  background-position: 0 80;
+  
+ 
+  /* Apply the animation */
+  animation: moveBackground 38s linear infinite;
+}
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -100% 0;
+    }
+}
+body img{
+    height: 100%;
+}
+
+
+.nav{
+    
+    width: 100%;
+    height: 5vh;
+    /* background-color: rgba(23, 166, 243, 0.3); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: right;
+    margin-bottom: 60px;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 60px #00FFFF;
+
+  
+}
+a{   
+   
+     margin-left: 18px;
+     color: rgb(239, 230, 230);
+     text-decoration: none;
+     font-size: 27px;
+     
+}
+ a:hover {
+    scale: 1.1;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 60px #00FFFF;
+}
+.imgstore{
+    width: 100%;
+    height: 55vh;
+    /* background-color: rgb(219, 234, 234); */
+    display: flex;
+    justify-content: center;
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(2px); */
+}
+.name{
+    position: relative;
+    left: 29%;
+    margin-bottom: 50px;
+    width: 40%;
+    font-size: 20px;
+    color: rgb(230, 243, 243);
+    /* background-color: #cfe4e4; */
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(2.9px); */
+    box-shadow: 0 0 50px 15px #dbedf7;
+    border-radius: 190px;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; 
+     
+   
+}
+.name:hover{
+    
+        box-shadow: 0 0 10px #00f2ff, 0 0 20px #396add, 0 0 30px #FFFF00, 0 0 40px #00FFFF;
+    
+}
+.imgstore img{
+    height: 65vh;
+    width: 100%;
+    
+    
+    
+    
+}
+h1{
+        
+        /* background-color: rgb(50, 47, 47); */
+        border-radius: 20px;
+        font-size: 16.5px;
+        text-align: center
+       
+        /* filter: drop-shadow(20px 20px 10px rgb(218, 223, 218)); */
+      
+}
+h1:hover{
+    
+        text-shadow: 0 0 10px #ddf4f4, 0 0 20px #cef0f0, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 60px #00FFFF;
+     scale: 1.2;
+
+}
+.cv{
+    width:60%;
+    height: 60vh;
+    /*top:180px;*/
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.sm{
+    position: fixed;
+    top: 50%;
+    left: 0;
+   
+    transform: translateY(-50%);
+    /* background-color: #333; */
+    padding:10 px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  
+
+}
+.skills {
+    padding: 40px;
+    font-size: x-large;
+    background-color: #dbedf7;
+    width: 80%;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;border-radius: 20px;
+
+}
+
+/* Skill item */
+.skill {
+    margin-bottom: 10px ;
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.skill:hover{
+   
+        color: #007BFF;       /* Change color on hover */
+    
+}
+
+/* Label for skill */
+.skill span {
+    margin-right: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 15%;
+}
+
+/* Skill bar */
+.skill-bar {
+    height: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    width: 0;
+    margin-left: 10px;
+    animation: fillBar 1.5s forwards;
+}
+
+/* Animation for skill bar */
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--width); }
+}
+audio{
+   
+    height: 15vh;
+    /* position: absolute; */
+ 
+    display: flex;
+    width: 29%;
+
+    justify-content: baseline;
+    /* background-color: #f6f6f6; */
+    /* border-radius: 90px; */
+    align-items: baseline;
+    margin: auto;
+   
+}
+.abc{
+    background-color: rgb(15, 14, 14);
+    width: 200px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+
+}
+.ft{
+    width: 100%;
+    height:3vh;
+    background-color: #dbedf7;
+    position: absolute;
+    bottom: -6px;
+    position: fixed;
+}
+.prj{
+    padding: 50px;
+    width: 30%;
+    height: 20vh;
+    margin: auto;
+
+  
+}
+h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+    
+  h2 {
+      font-size: 4.2rem;
+  }
+    
+  h3 {
+      font-size: 1.8rem;
+  }
+  
+  .container {
+    margin-top: 220px;
+  }
+  
+  
+  
+  .neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
